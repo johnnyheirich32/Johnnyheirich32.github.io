@@ -6,13 +6,13 @@
 <title>CIS 114 homework </title> 
 </head> 
 <body><heading> CIS 114 week 2B </heading>
-   <button id="addNumbersBtn">Add Three Numbers</button>
 <a href = "johnnyheirich32.github.io/week1.html"> week1</a>
 <a href = "johnnyheirich32.github.io/week2.html"> week2</a>
 <a href = "johnnyheirich32.github.io/week2a.html"> week2a</a>
 <a href = "johnnyheirich32.github.io/week2b.html"> week2b</a>
 <a href = "johnnyheirich32.github.io/week2c.html"> week2c</a>
  <form id="numberForm">
+   <button id="addNumbersBtn">Add Three Numbers</button>
         <label for="x">Number 1:</label>
         <input type="number" id="num1" required><br><br>
 
@@ -26,7 +26,7 @@
     </form>
 <script>
 const addButton = document.getElementById('addNumbersBtn');
-addButton.addEventListener('click', () => {
+addButton.addEventListener('click', function() {
 document.write("hello");
   //const x = parseInt(document.getElementById('x').value);
     ////const y = parseInt(document.getElementById('y').value);
