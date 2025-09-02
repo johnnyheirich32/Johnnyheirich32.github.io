@@ -30,6 +30,18 @@
   <input type="submit" value="Submit">
 </ul>
 function submitandprint(event)
+}//function submitandprint(event)
+//form.addEventListener('submit', submitandprint);
 } {
+    event.preventDefault(); // Prevent default form submission
+
+    const nameValue = document.getElementById('nameInput').value;
+    const emailValue = document.getElementById('emailInput').value;
+
+    const outputDiv = document.getElementById('output');
+    outputDiv.innerHTML = `
+        <p><strong>Submitted Data:</strong></p>
+        <p>Name: ${nameValue}</p>
+        <p>Email: ${emailValue}</p>; {
 
 </html>
