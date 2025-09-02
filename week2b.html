@@ -24,16 +24,17 @@
         <input type="number" id="num3" required><br><br>
 
         <button type="submit">Calculate Sum</button>
-    </form>
-form.addEventListener('submit', submitandprint);
+    </form><script>
 }function submitandprint(event)
+const myForm = document.getElementById('numberform');
+myForm.addEventListener('submit', function(event) {
 } {
     event.preventDefault(); // Prevent default form submission
 
-  const x = parseFloat(document.getElementById('x').value);
-    const y = parseFloat(document.getElementById('y').value);
-    const z = parseFloat(document.getElementById('z').value);
+  const x = parseInt(document.getElementById('x').value);
+    const y = parseInt(document.getElementById('y').value);
+    const z = parseInt(document.getElementById('z').value);
  sum = x + y + z
 document.write (x,y,z),x,y,z  
-
+</script>
 </html>
