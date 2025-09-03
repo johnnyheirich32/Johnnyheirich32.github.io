@@ -23,8 +23,8 @@
         <input type="number" id="z" required><br><br>
 </form>
 
-
 <script>
+document.body.appendChild(numberForm);
 function displaymessage()
 {
 document.write("A ");
@@ -40,7 +40,7 @@ console.log(document.forms) ;
 </script>
 
 <form id="buttonForm">
-<button onclick="displaymessage()">Click me</button>
+<button type=button onclick="displaymessage()">Click me</button>
 </form>
 </body>
 </html>
